@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <title>GS</title>
+</head>
+<body>
+    <div class="container">
+        <div id="map">
+        </div>
+        <div id="main">
+        </div>
+        <div class="login">
+            <h1 id="h1">Login</h1>
+            <input type="email" placeholder="Enter your Email" name="email" id="email">
+            <input type="password" placeholder="Enter your password" name="password" id="password">
+            <button type="submit" id="button" onclick="hide()">Submit</button>
+        </div>
+        <div class="popup">
+            <h1>Enter Your Confession</h1>
+            <textarea name="textarea" id="textarea" cols="30" rows="10">Type Here...</textarea>
+            <button type="submit" id="submit" onclick="pin()">Submit</button>
+            <button id="cancel" onclick="cancel()">Cancel</button>
+        </div>
+        <div class="add">
+            <i class="fa-solid fa-plus" style="font-size: 40px;" onclick="func()"></i>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/6fcaf391f4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

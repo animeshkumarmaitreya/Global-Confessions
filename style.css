@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#map{
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+#main{
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-size: 100% 100%;
+    opacity: 85%;
+    transition: all 2s ease-in-out;
+}
+.login{
+    z-index:2;
+    width: 50vw;
+    height: 70vh;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-top-right-radius:24px ;
+    border-bottom-right-radius:24px ;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: black;
+    border-top-right-radius:24px ;
+    border-bottom-right-radius: 24px;
+    transition: width 2s ease-in-out;
+}
+.login h1{
+    margin-bottom: 10%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.login input{
+    border: none;
+    display: flex;
+    margin: 28px;
+    width: 50%;
+    height: 12%;
+    background:none;
+    border-bottom:4px solid red  ;
+}
+::placeholder{
+    color: blue;
+}
+.login button{
+    margin: 25px;
+    width: 80px;
+    height: 30px;
+    border: 2px solid red ;
+    background: none;
+    border-radius: 10px;
+}
+#button:hover{
+    cursor: pointer;
+}
+.add{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+
+}
+.add:hover{
+    cursor: pointer;
+}
+.popup{
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    height: 80%;
+    width: 30%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius:24px ;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.popup h1{
+    margin: auto;
+    margin-left: 23px;
+}
+#textarea{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-bottom: 120px;
+    width: 80%;
+    margin: auto;
+    height: 30%;
+}
+.popup button{
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left:35% ;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 12px;
+    background: none;
+}
+.popup button:hover{
+    cursor: pointer;
+}
